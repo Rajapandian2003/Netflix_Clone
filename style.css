@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* NAVBAR STARTS */
+
+.netflix_logo img {
+    height: 50px;
+    width: 150px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 50px;
+    z-index: 10;
+}
+
+.navbar_content {
+    display: flex;
+    padding: 6px 10px 10px 10px;
+    gap: 20px;
+}
+
+.drop_down {
+    border: 0.1rem solid white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown_value {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.drop_down option {
+    border: none;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.signin_button {
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    padding: 0px 20px;
+    border: none;
+    font-weight: 600;
+}
+
+.signin_button:hover {
+    background-color: rgb(167, 13, 13);
+    transition: 500ms;
+}
+
+/* @media (max-width:1000px) {
+
+    .navbar {
+        padding: 35px 25px;
+    }
+
+    .netflix_logo img {
+        height: 50px;
+        width: 130px;
+    }
+
+    .navbar_content {
+        padding: 4px 8px 8px 8px;
+        gap: 10px;
+    }
+
+}
+*/
+
+/* NAV BAR ENDS */
+
+/* NAVIGATE BAR STARTS */
+.navigate {
+    position: absolute;
+    top: 19%;
+    z-index: 1;
+    left: 32%;
+    background: rgba(66, 66, 66, 0.7);
+    padding: 15px 40px;
+    border-radius: 25px;
+}
+
+.navigate_content {
+    display: flex;
+    gap: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navigate_content a {
+    text-decoration: none;
+    color: rgb(189, 184, 184);
+    transition: 1200ms;
+}
+
+.navigate_content a:hover {
+    color: white;
+    transition: 500ms;
+}
+
+/* @media (max-width:1000px) {
+
+    .navigate {
+        top: 23%;
+        left: 25%;
+        padding: 15px 30px;
+    }
+    
+} */
+
+/* NAVIGATE BAR ENDS */
+
+/* MAIN SECTION STARTS */
+
+.main_bg_container {
+    height: 100%;
+    width: 100%;
+}
+.main_bg {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main_overlay {
+    height: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    inset: 0;
+}
+
+.main_content {
+    position: absolute;
+    top: 32%;
+    left: 18%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main_content h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.main_content small {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main_content p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.main_email {
+    position: absolute;
+    top: 82%;
+    left: 32%;
+    display: flex;
+    gap: 15px;
+}
+
+.main_email input {
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.1rem solid white;
+    border-radius: 20px;
+    padding: 10px 160px 10px 20px;
+    color: white;
+}
+
+.main_email button {
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.main_email button:hover {
+    background-color: rgb(167, 13, 13);
+    transition: 500ms;
+}
+
+.separate{
+    height: 5px;
+    background-color: rgb(44, 42, 44);
+}
+
+/* @media (max-width:1000px) {
+
+    .main_content {
+        top: 40%;
+        left: 17%;
+    }
+
+    .main_content h1 {
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .main_content small {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .main_content p {
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+    .main_email {
+        top: 80%;
+        left: 25%;
+    }
+    
+    .main_email input {
+        padding: 10px 160px 10px 20px;
+    }
+    
+    .main_email button {
+        padding: 10px 18px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .main_content {
+        top: 40%;
+        left: 5%;
+    }
+
+    .main_content h1 {
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .main_content small {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .main_content p {
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+    .main_email {
+        top: 80%;
+        left: 17%;
+        gap: 20px;
+    }
+    
+    .main_email input {
+        padding: 10px 160px 10px 20px;
+    }
+    
+    .main_email button {
+        padding: 10px 18px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+} */
+
+/* MAIN SECTION END */
+
+/* FIRST SECTION STARTS */
+
+.content_1{
+    margin: 70px;
+    padding: 30px;
+    display: flex;
+}
+
+.fitst_cotent{
+    margin: 70px;
+}
+
+.fitst_cotent h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.fitst_cotent p{
+    font-size: 20px;
+    padding: 0px 10px 10px 0px;
+    font-weight: 300;
+}
+
+.first_content_img img:hover{
+    box-shadow: 1px 2px 2rem rgb(255, 0, 0);
+    transition: 500ms;
+}
+
+/* FIRST SECTION END */
+
+/* SECOND SECTION STARTS */
+
+.content_2{
+    margin: 70px;
+    padding: 30px;
+    display: flex;
+}
+
+.second_cotent{
+    margin: 60px;
+}
+
+.second_cotent h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.second_cotent p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.sencond_content_img img:hover{
+    box-shadow: 1px 2px 2rem rgb(255, 0, 0);
+    transition: 500ms;
+}
+
+/* SECOND SECTION END */
+
+/* FAQ STARTS */
+
+.faq h2{
+    text-align: center;
+}
+
+.faq{
+    padding: 50px;
+}
+
+.faqbox:hover{
+    background-color: rgb(29, 27, 27);
+}
+
+.faqbox i{
+    filter: invert(0.5);
+}
+
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    background-color: rgb(58, 57, 57);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    width: 60%;
+}
+
+/* FAQ ENDS */
+
+/* FOOTER STARTS */
+
+footer{
+    max-width: 90vw;
+    margin: 20px auto;
+    padding: 50px;
+}
+
+footer .question{
+    padding: 30px 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer_item a{
+    color: rgb(63, 63, 63);
+    display: flex;
+}
+
+.footer_item a:hover{
+    color: white;
+    transition: 500ms all ease-out;
+}
+
+/* FOOTER ENDS */
+
+
+/* HOME PAGE ENDS */
+
+
+/* SIGN-IN PAGE STARTS */
+
+.signin_overlay{
+    z-index: 1;
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 50px;
+    padding: 30px;
+    width: 30vw;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center input{
+    background-color: rgba(73, 71, 71,0.5);
+    border: 1px solid rgb(109, 107, 107);
+    padding: 15px;
+    color: white;
+    border-radius: 3px;
+}
+
+.a{
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.a:hover{
+    background-color: rgb(150, 15, 15);
+    transition: 500ms;
+}
+
+.b{
+    background-color: rgba(90, 88, 88,0.5);
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.b:hover{
+    background-color: rgba(49, 48, 48, 0.5);
+    transition: 500ms ;
+}
+
+.signin_overlay h1{
+    font-size: 25px;
+    transition: 500ms;
+}
+
+.center p{
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.center p:hover{
+    color: rgba(167, 165, 165, 0.5);
+    transition: 500ms;
+}
